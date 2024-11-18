@@ -1,5 +1,7 @@
 # Pong Game en Windows hecho en c
 
+<div align="center"> <img src="https://github.com/user-attachments/assets/dfcfd32a-726f-4372-885c-9145cddc1165" alt="pong-game"> </div>
+
 ## Descripción
 Este proyecto es una implementación del clásico juego de Pong utilizando el lenguaje de programación C y la biblioteca gráfica raylib. El objetivo del juego es simple: dos jugadores controlan paletas para golpear una pelota y evitar que pase por sus respectivos lados de la pantalla. El primer jugador en alcanzar el puntaje máximo gana el juego.
 
