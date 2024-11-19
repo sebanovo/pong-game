@@ -1,67 +1,104 @@
-# Pong Game en Windows hecho en c
 
-<div align="center"> <img src="https://github.com/user-attachments/assets/dfcfd32a-726f-4372-885c-9145cddc1165" alt="pong-game"> </div>
+# 🎮 Pong Game en Windows - Hecho en C
 
-## Descripción
-Este proyecto es una implementación del clásico juego de Pong utilizando el lenguaje de programación C y la biblioteca gráfica raylib. El objetivo del juego es simple: dos jugadores controlan paletas para golpear una pelota y evitar que pase por sus respectivos lados de la pantalla. El primer jugador en alcanzar el puntaje máximo gana el juego.
+<div align="center"> 
+  <img src="https://github.com/user-attachments/assets/dfcfd32a-726f-4372-885c-9145cddc1165" alt="pong-game" width="400">
+</div>
 
-## Características
-- **Modo de dos jugadores**: Cada jugador controla una paleta.
-- **Detección de colisiones**: La pelota rebota en las paletas y los bordes de la pantalla.
-- **Interfaz gráfica**: Utiliza raylib para renderizar gráficos simples y efectivos.
+## 📝 Descripción
 
-## Requisitos
-- **Compilador C**: GCC o cualquier otro compilador compatible.
-- **raylib**: Biblioteca gráfica para C. Puedes descargarla e instalarla desde [raylib](https://www.raylib.com/).
+Este proyecto es una implementación del clásico juego **Pong**, desarrollado en el lenguaje de programación **C** y utilizando la biblioteca gráfica **raylib**. Disfruta de una experiencia retro con gráficos simples pero efectivos.
 
-## Instalación
+### 🏆 Objetivo del Juego
 
-1. Clona este repositorio:
+Cada jugador controla una paleta que debe evitar que la pelota pase por su lado de la pantalla. ¡El primer jugador en alcanzar el puntaje máximo será el ganador!
+
+---
+
+## ✨ Características
+
+- **Modo de dos jugadores**: Ideal para competencias rápidas.
+- **Física de colisiones precisa**: La pelota rebota dinámicamente en las paletas y los bordes.
+- **Gráficos minimalistas**: Renderizados con **raylib** para garantizar rendimiento y simplicidad.
+
+---
+
+## 📋 Requisitos del Proyecto
+
+- **Compilador C**: Cualquier compilador compatible como GCC o MinGW.
+- **raylib**: Biblioteca gráfica para C. Descárgala desde [raylib](https://www.raylib.com/).
+- **CMake** *(opcional)*: Para generar archivos de compilación automatizados.
+
+---
+
+## 🛠️ Instrucciones de Instalación
+
+### 1️⃣ Clonar el Repositorio
 
 ```bash
 git clone https://github.com/sebanovo/pong-game.git
-
 cd pong-game
 ```
 
-2. Compila el código:
+### 2️⃣ Compilación del Proyecto
 
-- 1ra Forma con `cmake`:
+#### Opción 1: Usando CMake
 
-```powershell
+```bash
 mkdir build
-
 cd build
+
+# Configura el proyecto
 cmake ..
+
+# Compila el proyecto
 cmake --build .
 ```
 
-- 2da Forma  con `gcc`
+#### Opción 2: Usando GCC
 
-```powershell
-
+```bash
 mkdir build
 
+# Compila, enlaza y genera el ejecutable
 gcc -std=c11 -Wall -I./include -L./lib -o build/game src/main.c lib/libraylib.a -lopengl32 -lgdi32 -lkernel32 -lwinmm
 ```
 
-## Controles
-- `Jugador 1`: Usa las teclas W y S para mover la paleta hacia arriba y hacia abajo.
+---
 
-- `Jugador 2`: Usa las teclas de flecha Arriba y Abajo para mover la paleta hacia arriba y hacia abajo.
+## 🎮 Controles del Juego
 
+- **Jugador 1**:
+  - Mover hacia arriba: `W`
+  - Mover hacia abajo: `S`
+- **Jugador 2**:
+  - Mover hacia arriba: `↑`
+  - Mover hacia abajo: `↓`
 
-## Correlo 🚀
+---
 
-```
+## ▶️ Ejecuta el Juego
+
+```bash
 ./build/game.exe
 ```
 
-## Fuentes de Código
+---
 
-- En caso de que tu compilador no reconozca las librerias de raylib de este repositorio puedes compilar las librerias por tí mismo
+## 📦 Librerías y Recursos
 
-- Puedes encontrar el código fuente de raylib en su repositorio oficial de GitHub [raylib github](https://github.com/raysan5/raylib/releases/tag/5.5)
+Si encuentras problemas al compilar debido a las librerías de **raylib**, puedes compilarlas manualmente desde su repositorio oficial: [raylib GitHub](https://github.com/raysan5/raylib/releases/tag/5.5).
 
-# Contribuciones
-¡Siéntete libre de contribuir mejorando el codigo! Abre un problema o envía una solicitud de extracción.
+---
+
+## 💡 Contribuciones
+
+¡Tu ayuda es bienvenida! 🎉  
+Si tienes ideas, encuentras errores o deseas agregar características, abre un **issue** o envía un **pull request**.
+
+---
+
+<div align="center">
+  Hecho con ❤️ por [Tu Nombre o Alias]  
+  ¡Gracias por apoyar este proyecto! 🚀
+</div>
