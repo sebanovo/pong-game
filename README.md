@@ -99,6 +99,6 @@ Si tienes ideas, encuentras errores o deseas agregar características, abre un *
 ---
 
 <div align="center">
-  Hecho con ❤️ por [Tu Nombre o Alias]  
+  Hecho con ❤️ 
   ¡Gracias por apoyar este proyecto! 🚀
 </div>
