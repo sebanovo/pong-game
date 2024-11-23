@@ -28,11 +28,11 @@ const float paddle_height = 100;
 const float paddle_speed_y_axis = 10;
 
 // player1
-Vector2 player1_position = { x_off_set, screen_width / 3 }; // x, y
+Vector2 player1_position = { x_off_set, screen_height / 2 - paddle_height / 2 }; // x, y
 unsigned int player1_score = 0;
 
 // player2
-Vector2 player2_position = { screen_width - x_off_set - paddle_width, screen_width / 3 }; // x, y
+Vector2 player2_position = { screen_width - x_off_set - paddle_width, screen_height / 2 - paddle_height / 2  }; // x, y
 unsigned int player2_score = 0;
 
 void draw_ball()
